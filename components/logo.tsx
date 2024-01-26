@@ -5,7 +5,7 @@ const Logo = () => {
     return ( 
         <>
         <Link href={"/"} className="flex items-center font-bold">
-            <Image src={"/next.svg"} alt="Hack-Chinese Logo" width="30" height="30" className="mr-4  rounded-sm object-contain" />
+            <Image src={"/logo.png"} alt="Hack-Chinese Logo" width="40" height="40" className="mr-4  rounded-sm object-contain" />
             <p className="text-xl">HACK CHINESE</p>
         </Link>
         </>
