@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "./card";
 
 import cnchar from "cnchar";
@@ -7,7 +9,7 @@ import { useMemo, useState } from "react";
 
 const Cards = ({ words }: { words: string }) => {
   const [cardsArr, setCardsArr] = useState<CardProps[]>([]);
-
+  
   useMemo(() => {
     const spellArr: string | any[] = cnchar.spell(
       words,

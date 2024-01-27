@@ -4,7 +4,6 @@ import cnchar from "cnchar";
 import draw from "cnchar-draw";
 
 const Card = ({ word, spell, stroke }: CardProps) => {
-  console.log("card");
   const drawRef = useRef<HTMLDivElement>(null);
   cnchar.use(draw);
 
