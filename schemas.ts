@@ -4,7 +4,7 @@ export const isChineseWords = (str: string): boolean => {
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
     const charCode = char.charCodeAt(0);
-    if (charCode < 19968 || charCode > 40959) {
+    if ((charCode < 19968 || charCode > 40959) && charCode !== 44 && charCode !== 46) {
       return false;
     }
   }

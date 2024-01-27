@@ -23,6 +23,15 @@ dependencies:
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
+  cnchar:
+    specifier: ^3.2.5
+    version: 3.2.5
+  cnchar-draw:
+    specifier: ^3.2.5
+    version: 3.2.5
+  cnchar-order:
+    specifier: ^3.2.5
+    version: 3.2.5
   lucide-react:
     specifier: ^0.315.0
     version: 0.315.0(react@18.0.0)
@@ -757,6 +766,28 @@ packages:
   /clsx@2.1.0:
     resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
+    dev: false
+
+  /cnchar-draw@3.2.5:
+    resolution: {integrity: sha512-DT3f5AP8Rl4kFt+BpBTdQr0qPHdEYsaHgOm9CeSQX2W7ju/JaHc8rkASKa+JHEz3RlO+492bLmlZnVS4nAbN1Q==}
+    dependencies:
+      cnchar-types: 3.2.5
+    dev: false
+
+  /cnchar-order@3.2.5:
+    resolution: {integrity: sha512-tBwCDlfawiFaufTLRXpp9rqT96Votmt+J0BJyB0zzNNEaRF+yVbyZFAKVGGF0a90vB0woZiai+/Vg2ZhRuLG4w==}
+    dependencies:
+      cnchar-types: 3.2.5
+    dev: false
+
+  /cnchar-types@3.2.5:
+    resolution: {integrity: sha512-E4QhUYzCmlZB5EcEXnz9ZrTWl/Cf+Asat6DcMH4TzlmC73NLA/SoEef8Z+IrO7pWKjUA7ZALzERlgVUfC0Wg3A==}
+    dev: false
+
+  /cnchar@3.2.5:
+    resolution: {integrity: sha512-VJaF9FRjabzP2lIBAoffFVlAp7kbO/HJfmBttJIyoA16GSwT9jNwTm7Dh8AIIuppcnGYXs/LnrwDIaC7qExzpQ==}
+    dependencies:
+      cnchar-types: 3.2.5
     dev: false
 
   /color-convert@2.0.1:

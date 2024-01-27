@@ -19,6 +19,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 
+import Cards from "./cards";
+import Test from "./test";
+
 const WordsForm = () => {
   const StepIcon = ({ step }: { step: number }) => {
     return (
@@ -43,6 +46,8 @@ const WordsForm = () => {
     );
   };
 
+  const [text,setText] = useState("")
+
   //get form
   const form = useForm<z.infer<typeof WordsSchema>>({
     mode: "onSubmit",
@@ -53,13 +58,17 @@ const WordsForm = () => {
     },
   });
 
+
   const onSubmit = (values: z.infer<typeof WordsSchema>) => {
-    console.log(values);
-  }
+    if (values.words)
+    {
+      setText(values.words)
+    }
+  };
 
   return (
     <div>
-      <div>
+      <div className="max-w-xl mx-auto">
         <Form {...form}>
           <StepP step={1}>Please enter your words</StepP>
           <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -84,6 +93,9 @@ const WordsForm = () => {
             </Button>
           </form>
         </Form>
+      </div>
+      <div className="max-w-3xl mx-auto">
+      {text && <Cards words={text}/>}
       </div>
     </div>
   );
