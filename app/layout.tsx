@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HACK CHINESE WORDS",
   description: "Hack Chinese Words, help you learn chinese quick and easy.",
+  openGraph:{
+    title:"HACK CHINESE WORDS",
+    description:"Hack Chinese Words, help you learn chinese quick and easy.",
+    url:"",
+    siteName:"HACK CHINESE WORDS",
+    type:"website",
+  }
 };
 
 export default function RootLayout({
