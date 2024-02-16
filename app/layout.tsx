@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <PlausibleProvider domain="hack-chinese.ibucoin.top">
+       <head>
+       <PlausibleProvider domain="hack-chinese.ibucoin.top"/>
+      </head>
       <body className="inter.className">
         <div className="fixed h-screen w-full bg-gradient-to-r from-indigo-50 via-white to-cyan-100" />
         <Header />
@@ -32,7 +34,6 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
-      </PlausibleProvider>
     </html>
   );
 }
