@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import PlausibleProvider from 'next-plausible'
 
 export const metadata: Metadata = {
   title: "HACK CHINESE WORDS",
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <script defer data-domain="hack-chinese.ibucoin.top" src="https://plausible.io/js/script.js"></script>
+      <PlausibleProvider domain="hack-chinese.ibucoin.top">
       <body className="inter.className">
         <div className="fixed h-screen w-full bg-gradient-to-r from-indigo-50 via-white to-cyan-100" />
         <Header />
@@ -31,6 +32,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      </PlausibleProvider>
     </html>
   );
 }
