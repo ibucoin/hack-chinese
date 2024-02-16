@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+    <script defer data-domain="hack-chinese.ibucoin.top" src="https://plausible.io/js/script.js"></script>
       <body className="inter.className">
         <div className="fixed h-screen w-full bg-gradient-to-r from-indigo-50 via-white to-cyan-100" />
         <Header />
